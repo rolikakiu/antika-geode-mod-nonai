@@ -11,18 +11,10 @@
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-*.so.*
-
 
 # Fortran module files
 *.mod
@@ -39,31 +31,34 @@
 *.out
 *.app
 
-# Build directories
-build/
-Build/
+# Macos be like
+**/.DS_Store
+
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Ignore build folders
+**/build
+# Ignore platform specific build folders
 build-*/
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# Workspace files are user-specific
+*.sublime-workspace
 
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
+# ILY vscode
+**/.vscode
 
-# vcpkg
-vcpkg_installed/
+# Local History for Visual Studio Code
+.history/
 
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
+# clangd
 .cache/
+
+# Visual Studio
+.vs/
+
+# CLion
+.idea/
+/cmake-build-*/
